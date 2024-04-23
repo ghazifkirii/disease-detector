@@ -1,0 +1,173 @@
+{
+  "user": [
+    {
+      "id": "admin",
+      "name": "NT Infotech",
+      "password": "Test$1234",
+      "email": "test@gmail.com",
+      "gender": "male",
+      "role": "admin",
+      "isactive": true,
+      "address": {
+        "area": "chennai"
+      }
+    },
+    {
+      "id": "testuser",
+      "name": "Test User",
+      "password": "Test@1234",
+      "email": "test@in.com",
+      "gender": "male",
+      "role": "user",
+      "isactive": true,
+      "address": {
+        "area": "chennai"
+      }
+    },
+    {
+      "id": "Jhon1",
+      "name": "NT Infotech",
+      "password": "Test@1233",
+      "email": "te@in.com",
+      "gender": "male",
+      "role": "tech",
+      "isactive": true,
+      "address": {
+        "area": "chennai"
+      }
+    },
+    {
+      "id": "ntuser",
+      "name": "ramesh",
+      "password": "Test@1234",
+      "email": "te@in.com",
+      "gender": "male",
+      "role": "tech",
+      "isactive": true,
+      "address": {
+        "area": "banglore"
+      }
+    },
+    {
+      "id": "admin",
+      "name": "NT Infotech",
+      "password": "Test$1234",
+      "email": "test@gmail.com",
+      "gender": "male",
+      "role": "",
+      "isactive": false
+    },
+    {
+      "id": "jendeneb",
+      "name": "ghazi",
+      "password": "ghaziFK!123",
+      "email": "ghazi.fkiri@ensi-uma.tn",
+      "gender": "male",
+      "role": "",
+      "isactive": true
+    },
+    {
+      "id": "Babbou ",
+      "name": "hakim",
+      "password": "HAkim!123",
+      "email": "hakim.babbou@ensi-uma.tn",
+      "gender": "male",
+      "role": "",
+      "isactive": true
+    },
+    {
+      "id": "Hatoum",
+      "name": "hatem",
+      "password": "haem!123H",
+      "email": "fkirih41@gmail.com",
+      "gender": "male",
+      "role": "",
+      "isactive": false
+    }
+  ],
+  "role": [
+    {
+      "code": "user",
+      "name": "User",
+      "id": "b2e4"
+    },
+    {
+      "code": "tech",
+      "name": "Technician",
+      "id": "caf9"
+    }
+  ],
+  "menu": [
+    {
+      "code": "user",
+      "name": "User",
+      "id": "4476"
+    },
+    {
+      "code": "customer",
+      "name": "Customer",
+      "id": "f55b"
+    }
+  ],
+  "roleaccess": [
+    {
+      "role": "admin",
+      "menu": "user",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": true,
+      "id": "be96"
+    },
+    {
+      "role": "admin",
+      "menu": "customer",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": true,
+      "id": "5dcf"
+    },
+    {
+      "role": "user",
+      "menu": "user",
+      "haveedit": false,
+      "haveadd": false,
+      "havedelete": false,
+      "id": "6dee"
+    },
+    {
+      "role": "user",
+      "menu": "customer",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": false,
+      "id": "4dae"
+    }
+  ],
+  "customer": [
+    {
+      "id": "1",
+      "name": "rakhesh",
+      "Creditlimit": 1000
+    },
+    {
+      "id": "2",
+      "name": "rahul",
+      "Creditlimit": 1000
+    },
+    {
+      "id": "3",
+      "name": "ramesh",
+      "Creditlimit": 1000
+    },
+    {
+      "id": "4",
+      "name": "rahim",
+      "Creditlimit": 1000
+    },
+    {
+      "id": "5",
+      "name": "robert",
+      "Creditlimit": 1000
+    }
+  ]
+}

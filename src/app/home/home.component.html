@@ -1,0 +1,7 @@
+<div class="row">
+  <div class="col-md-4" *ngFor="let image of images; let i = index">
+    <div class="card animation-class mt-3">
+      <img class="card-img-top" [src]="'assets/images/' + image.src" >
+    </div>
+  </div>
+</div>
