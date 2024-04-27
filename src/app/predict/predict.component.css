@@ -1,0 +1,18 @@
+.card {
+  margin-bottom: 20px;
+  margin-top: 70px;
+}
+
+.card .btn-primary {
+  background-color: white;
+  color: #40E0D0;
+  border-radius: 20px;
+}
+
+.card .btn-primary:hover {
+  background-color: #40E201;
+}
+
+.card-equal-height {
+  height: 90%;
+}

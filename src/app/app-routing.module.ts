@@ -7,10 +7,14 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { UserComponent } from './user/user.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { PredictComponent } from './predict/predict.component';
+import { XRayComponent } from './x-ray/x-ray.component';
 
 const routes: Routes = [
  {component:LoginComponent,path:'login'},
  {component:RegisterComponent,path:'register'},
+ {path:'predict', component:PredictComponent},
+ {path:'x-ray', component:XRayComponent},
  {component:HomeComponent,path:'',canActivate:[AuthGuard]},
  {component:UserComponent,path:'user',canActivate:[AuthGuard]},
  {component:CustomerComponent,path:'customer',canActivate:[AuthGuard]},

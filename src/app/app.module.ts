@@ -15,6 +15,8 @@ import { ToastrModule } from 'ngx-toastr';
 import { UpdatepopupComponent } from './updatepopup/updatepopup.component';
 import { CustomerComponent } from './customer/customer.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { PredictComponent } from './predict/predict.component';
+import { XRayComponent } from './x-ray/x-ray.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     UserComponent,
     UpdatepopupComponent,
     CustomerComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    PredictComponent,
+    XRayComponent
   ],
   imports: [
     BrowserModule,

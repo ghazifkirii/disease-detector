@@ -1,11 +1,3 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <style>
   :host {
@@ -15,19 +7,6 @@
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 8px 0;
-  }
-
-  p {
-    margin: 0;
   }
 
   .spacer {
@@ -42,39 +21,22 @@
     height: 60px;
     display: flex;
     align-items: center;
-    background-color: #1976d2;
+    background-color: white;
     color: white;
     font-weight: 600;
   }
+  .toolbar a {
+    /* Autres propriétés CSS */
+    font-size: 14px;
+  }
+
+  
 
   .toolbar img {
     margin: 0 16px;
   }
 
-  .toolbar #twitter-logo {
-    height: 40px;
-    margin: 0 8px;
-  }
-
-  .toolbar #youtube-logo {
-    height: 40px;
-    margin: 0 16px;
-  }
-
-  .toolbar #twitter-logo:hover,
-  .toolbar #youtube-logo:hover {
-    opacity: 0.8;
-  }
-
-  .content {
-    display: flex;
-    margin: 82px auto 32px;
-    padding: 0 16px;
-    max-width: 960px;
-    flex-direction: column;
-    align-items: center;
-  }
-
+ 
   svg.material-icons {
     height: 24px;
     width: auto;
@@ -82,70 +44,6 @@
 
   svg.material-icons:not(:last-child) {
     margin-right: 8px;
-  }
-
-  .card svg.material-icons path {
-    fill: #888;
-  }
-
-  .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 16px;
-  }
-
-  .card {
-    all: unset;
-    border-radius: 4px;
-    border: 1px solid #eee;
-    background-color: #fafafa;
-    height: 40px;
-    width: 200px;
-    margin: 0 8px 16px;
-    padding: 16px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.2s ease-in-out;
-    line-height: 24px;
-  }
-
-  .card-container .card:not(:last-child) {
-    margin-right: 0;
-  }
-
-  .card.card-small {
-    height: 16px;
-    width: 168px;
-  }
-
-  .card-container .card:not(.highlight-card) {
-    cursor: pointer;
-  }
-
-  .card-container .card:not(.highlight-card):hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
-  }
-
-  .card-container .card:not(.highlight-card):hover .material-icons path {
-    fill: rgb(105, 103, 103);
-  }
-
-  .card.highlight-card {
-    background-color: #1976d2;
-    color: white;
-    font-weight: 600;
-    border: none;
-    width: auto;
-    min-width: 30%;
-    position: relative;
-  }
-
-  .card.card.highlight-card span {
-    margin-left: 60px;
   }
 
   svg#rocket {
@@ -163,10 +61,10 @@
     z-index: -10;
   }
 
-  a,
+  
   a:visited,
   a:hover {
-    color: #1976d2;
+    color: black;
     text-decoration: none;
   }
 
@@ -202,75 +100,11 @@
 
   .terminal pre {
     font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
-    color: white;
+    color: black;
     padding: 0 1rem 1rem;
     margin: 0;
   }
 
-  .circle-link {
-    height: 40px;
-    width: 40px;
-    border-radius: 40px;
-    margin: 8px;
-    background-color: white;
-    border: 1px solid #eeeeee;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    transition: 1s ease-out;
-  }
-
-  .circle-link:hover {
-    transform: translateY(-0.25rem);
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-  }
-
-  footer {
-    margin-top: 8px;
-    display: flex;
-    align-items: center;
-    line-height: 20px;
-  }
-
-  footer a {
-    display: flex;
-    align-items: center;
-  }
-
-  .github-star-badge {
-    color: #24292e;
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-    padding: 3px 10px;
-    border: 1px solid rgba(27,31,35,.2);
-    border-radius: 3px;
-    background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);
-    margin-left: 4px;
-    font-weight: 600;
-  }
-
-  .github-star-badge:hover {
-    background-image: linear-gradient(-180deg,#f0f3f6,#e6ebf1 90%);
-    border-color: rgba(27,31,35,.35);
-    background-position: -.5em;
-  }
-
-  .github-star-badge .material-icons {
-    height: 16px;
-    width: 16px;
-    margin-right: 4px;
-  }
-
-  svg#clouds {
-    position: fixed;
-    bottom: -160px;
-    left: -230px;
-    z-index: -10;
-    width: 1920px;
-  }
 
   /* Responsive Styles */
   @media screen and (max-width: 767px) {
@@ -310,14 +144,14 @@
     src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
   />
   
-  <a routerLink="">Home</a>
-  <a href="https://ghazifkiri.github.io/myportfolio/?fbclid=IwAR3Vz5C27YhVY-gzAx_i9Tss5of-hsi7q9cgCUyixiOOnzbkS7C7_idueJI" target="_blank">About</a>
-  <a href="https://ng-pokemon-app-1376c.web.app/login" target="_blank">work</a>
-  <a *ngIf="isadmin" routerLink="/user">User</a>
-  <a routerLink="/customer">Customer</a>
+  <a routerLink="" ><p style="color: #0A0A0A">Home</p></a>
+  <a href="https://ghazifkiri.github.io/myportfolio/?fbclid=IwAR3Vz5C27YhVY-gzAx_i9Tss5of-hsi7q9cgCUyixiOOnzbkS7C7_idueJI" target="_blank" ><p style="color: #0A0A0A;">About</p></a>
+  <a href="https://ng-pokemon-app-1376c.web.app/login" target="_blank"><p style="color: #0A0A0A;">work</p></a>
+  <a  routerLink="/predict"><p style="color: #0A0A0A;">Predict</p></a>
+  <a routerLink="/customer"><p style="color: #0A0A0A;">Customer</p></a>
     <div class="spacer"></div>
     
-    <a routerLink="/login">Logout</a>
+  <a routerLink="/login"><p style="color: #0A0A0A;">Logout</p></a>
 </div>
 
 <div class="content" style="width: 100%;display: block;" role="main">
